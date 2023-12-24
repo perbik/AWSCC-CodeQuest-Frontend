@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+
+:root {
+    --text: #141101;
+    --text-2: #fefbec;
+    --background: #fefcf1;
+    --primary: #e1b404;
+    --secondary: #136290;
+}
+   
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background);
+}
+   
+nav {
+    background-color: var(--primary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    position: sticky;
+    top: 0;
+}
+
+   
+nav p {
+    color: var(--text-2);
+    font-size: 24px;
+    font-weight: bolder;
+}
+   
+nav p span {
+    color: var(--secondary);
+}
+
+.nav-buttons {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+   
+.nav-buttons li a {
+    color: var(--text-2);
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 18px;
+}
+   
+.nav-buttons li a:hover {
+    color: var(--secondary);
+}
+
+#title-page {
+    padding: 20px;
+    background-color: var(--secondary);
+    margin-bottom: 10px;
+}
+
+#introduction {
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Front-end {
+    font-size: 32px;
+    color: var(--text-2);
+    margin-bottom: 10px;
+}
+
+#introduction p {
+    color: var(--primary);
+    font-style: italic;
+}
+
+
+
