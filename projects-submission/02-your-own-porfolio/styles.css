@@ -98,8 +98,21 @@ a {
 
 .main {
     width: 100%;
-    padding: 100px 0;
+}
+
+#home {
+    padding: 100px;
     background-color: var(--accent);
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 1130px;
+    margin: 0 auto;
+
 }
 
 .img-profile img {
@@ -109,15 +122,6 @@ a {
 
 .content {
     width: 550px;
-}
-
-.hero {
-    width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
 }
 
 .content {
@@ -147,3 +151,50 @@ a {
     margin-right: 0;
     border-right: none;
 }
+
+#about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: var(--background);
+}
+
+.about-text {
+    width: 550px;
+}
+
+.about-main {
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text h2 {
+    color: var(--text);
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    background: var(--secondary);
+    border-radius: 50px;
+    text-align: center;
+}
+
+.about-text h5 {
+    color: var(--text);
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text p {
+    color: var(--text);
+    font-size: 16px;  
+    text-align: justify;
+    text-justify: inter-word;
+    text-indent: 50px;
+}
+
+
