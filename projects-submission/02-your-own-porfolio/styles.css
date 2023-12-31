@@ -81,6 +81,10 @@ a {
     margin-right: 2rem; 
 }
 
+.nav-buttons li:last-child {
+    margin-right: 0;
+}
+
 .nav-buttons li a {
     font-size: 1.8rem; 
     color: var(--text);
@@ -192,7 +196,7 @@ a {
 
     .img-profile img {
         width: 100%;
-        max-width: none;
+        max-width: 300px;
     }
 
     .content {
@@ -206,6 +210,10 @@ a {
 
     .content h1 {
         font-size: 3rem;
+    }
+
+    .info {
+        padding: 1rem;
     }
 
     .info li {
@@ -260,7 +268,35 @@ a {
     text-align: justify;
     text-justify: inter-word;
     text-indent: 5rem; 
+}
 
+@media screen and (max-width: 768px) {
+    #about {
+        padding: 5rem 0; 
+    }
+
+    .about-text {
+        width: 100%;
+        max-width: none;
+    }
+
+    .about-main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-text h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-text h5 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-text p {
+        font-size: 1.2rem;
+    }
 }
 
 /*Projects*/
@@ -290,7 +326,6 @@ a {
     border: 0.1rem solid rgba(0, 0, 0, 0.1);
     position: relative;
     transition: box-shadow 0.3s ease;
-    cursor: pointer;
 }
 
 #projects .project-card-main .project-card:hover {
@@ -330,6 +365,36 @@ a {
     margin-bottom: 2rem;
     display: flex;
     justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    #projects h2 {
+        width: auto;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+
+    #projects .project-card-main {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    #projects .project-card-main .project-card {
+        flex: 1 1 100%;
+        margin-bottom: 2rem;
+    }
+
+    #projects .project-card-main .project-card img {
+        height: 15rem;
+    }
+
+    #projects .project-card-main .project-card h3,
+    #projects .project-card-main .project-card p,
+    #projects .project-card-main .project-card a {
+        margin: 1.5rem;
+        padding: 1rem 1rem;
+    }
+
 }
 
 /*Footer*/
@@ -429,5 +494,51 @@ label {
     text-align: center;
 }
 
+@media screen and (max-width: 768px) {
+    .footer {
+        padding: 2rem;
+    }
 
+    #contacts {
+        max-width: 100%;
+    }
+
+    .footer h2 {
+        font-size: 2.5rem;
+        width: auto;
+    }
+
+    .footer form {
+        max-width: 100%;
+        padding: 0 7rem;
+    }
+
+    .footer label {
+        font-size: 1.4rem;
+    }
+
+    .footer textarea,
+    .footer input {
+        font-size: 1.2rem;
+    }
+
+    .footer button {
+        padding: 1rem 1.5rem;
+        font-size: 1.4rem;
+    }
+
+    .soc-med-links {
+        margin-top: 1rem;
+    }
+
+    .social-link img {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    .footer p {
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+}
 
