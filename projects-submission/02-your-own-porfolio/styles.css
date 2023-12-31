@@ -92,6 +92,28 @@ a {
     text-decoration: underline;
 }
 
+@media screen and (max-width: 768px) {
+    .header {
+      padding: 1rem; 
+    }
+  
+    .name {
+      font-size: 1.8rem; 
+      margin-right: 1rem; 
+    }
+  
+    .nav-buttons {
+      gap: 0.5rem;
+    }
+  
+    .nav-buttons li {
+      margin-right: 1rem;
+    }
+  
+    .nav-buttons li a {
+      font-size: 1.6rem;
+    }
+}
 
 /* Hero */
 
@@ -152,6 +174,45 @@ a {
 .info li:last-child {
     margin-right: 0;
     border-right: none;
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding: 1rem;
+    }
+
+    #home {
+        padding: 6rem;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .img-profile img {
+        width: 100%;
+        max-width: none;
+    }
+
+    .content {
+        margin-left: 0;
+        margin-top: 1.5rem;
+    }
+
+    .content h4 {
+        font-size: 1.5rem;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    .info li {
+        margin-right: 0.5rem;
+        padding-right: 0.5rem;
+        border-right: 0.2rem solid var(--primary);
+    }
 }
 
 /*About*/
