@@ -9,3 +9,4 @@
 // 7. Use the `calculateAverage` function with an array of numbers and print the result.
 
 // These are the fundamental concepts of functions in JavaScript. Functions allow you to write modular and reusable code, making your programs more organized and easier to maintain.
+
