@@ -1,0 +1,1 @@
+console.log('JavaScript is a programming language that makes websites interactive.')
