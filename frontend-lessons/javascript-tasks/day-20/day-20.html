@@ -7,6 +7,40 @@
     <script src="day-20.js"></script>
 </head>
 <body>
+    <h1 id="title" style="text-align: center;">Interacting with the Document Object Model (DOM)</h1>
+    <h2 class="subtopic">What is Document Object Model (DOM)?</h2>
+    <p>The DOM represents the structure of an HTML document in a tree-like structure.</p>
+
+    <div id="get-elements">
+        <h3>Getting Elements</h3>
+        <ul id="categories">
+            <li>
+                <span style="font-weight: bold;">Getting Elements by <span style="color: blueviolet;">Tag Name</span></span> 
+                <p class="description">JavaScript Code: const *variable* = document.getElementByTagName("tag");</p>
+            </li>
+            <li>
+                <span style="font-weight: bold;">Getting Elements by <span style="color: blueviolet;">Class Name</span></span> 
+                <p class="description"> const *variable* = document.getElementByClassName("class name");</p> 
+            </li>
+            <li>
+                <span style="font-weight: bold;">Getting Elements by <span style="color: blueviolet;">ID</span></span> 
+                <p class="description"> const *variable* = document.getElementById("id");</p>
+            </li>
+            <li>
+                <span style="font-weight: bold;">Getting Elements by <span style="color: blueviolet;">Using querySelector Methods</span></span> 
+                <p class="description"> const *variable* = document.querSelector('tag'); <br>
+                                        const *variable* = document.querSelector('#ID'); <br>
+                                        const *variable* = document.querSelector('.class'); </p>
+                <p class="description"> The <span style="color: blue;">querySelectorAll</span> method is similar, 
+                    but it returns a NodeList, which is an array-like object containing 
+                    all matching elements, rather than just the first match.
+                </p>
+                <p class="description">const *variable* = document.querySelectorAll('id/tag/class');</p>
+                
+            </li>
+        </ul>
+        
+    </div>
     
 </body>
 </html>
