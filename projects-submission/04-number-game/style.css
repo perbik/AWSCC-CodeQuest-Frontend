@@ -8,12 +8,12 @@
 }
 
 :root {
-    --text: #141101;
-    --text-2: #fcfaf0;
-    --background: #f9f5e2;
-    --primary: #e1b404;
-    --secondary: #136290;
-    --box-shadow: #052d73;
+    --text: #e0f8e1;
+    --background: #041306;
+    --primary: #e5dc91;
+    --secondary: #20318b;
+    --accent: #d447a6;
+    --white: #F8FBFF;
 }
 
 *,
@@ -25,10 +25,81 @@
     font-family: 'Press Start 2P', 'Silkscreen';
 }
 
-h1 {
-    font-family: 'Press Start 2P';
+body {
+    background-color: var(--background);
 }
 
-p {
+#game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    height: 40vh;
+    margin: 200px 200px;
+    border: 5px solid var(--white);
+    border-radius: 25px;
+    padding: 10px;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Press Start 2P';
+    color: var(--text);
+    margin: 10px 10px;
+}
+
+#description {
     font-family: 'Silkscreen';
+    color: var(--text);
+    margin: 20px 10px;
+}
+
+#number-attempts {
+    color: var(--text);
+}
+
+#result-container {
+    color: var(--text);
+}
+
+#inputGuess {
+    border: 3px solid var(--primary);
+    height: 50px;
+    padding: 5px;
+}
+
+#btn-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#submit-btn, #restart-btn {
+    border: 1px solid var(--secondary);
+    background-color: var(--secondary);
+    font-size: 10px;
+    padding: 5px 10px;
+    height: 20px;
+    color: var(--text);
+    margin: 15px 10px;
+}
+
+#number-attempts {
+    color: var(--text);
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items horizontally */
+    margin-bottom: 10px; /* Add margin for spacing */
+}
+
+#attempt-description {
+    margin: 10px;
+}
+
+.highlight {
+    color: var(--accent);
 }
